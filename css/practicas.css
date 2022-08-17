@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #336b87 !important;
+}
+a{
+    color: #fff !important;
+}
+h2{
+    text-align: center;
+    margin-top: 1em;
+}
+#card{
+    display: block !important;
+    margin: auto !important;
+    margin-top: 2rem !important;
+    text-align: justify;
+}
+.img{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+.gif{
+    display: block;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+#btn{
+    width: 50% !important;
+    margin-left: 50%;
+}
+.fun{
+    color: aqua;
+}
+.var{
+    color: darkcyan;
+}
+.msg{
+    color: chartreuse;
+}
+.const{
+    color: darkorange;
+}
+.com{
+    color:darkolivegreen;
+}
+h4{
+    text-align: center;
+}

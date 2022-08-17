@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #336b87 !important;
+}
+a{
+    color: #fff !important;
+}
+.img{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+#btn{
+    width: 50% !important;
+    margin-left: 50%;
+}
+#card{
+    display: block !important;
+    margin: auto !important;
+    margin-top: 2rem !important;
+    text-align: justify;
+}
+.card-header{
+    text-align: center !important;
+}
+.container{
+    width: 80%;
+}
+
+.fun{
+    color: aqua;
+}
+.msg{
+    color: chartreuse;
+}
+.com{
+    color:darkolivegreen;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones flecha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Colegio Don Bosco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../practicas.html">Buenas practicás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../linting.html">Linting en JS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="flecha.html">Funciones flecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../spread.html">Operador Spread</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+        <div class="card-header">¿Qué es una función flecha?</div>
+        <div class="card-body">
+          <h5 class="card-title">Funciones flecha.</h5>
+          <p class="card-text">
+            Una expresión de función flecha es una alternativa compacta a una expresión de 
+            función tradicional, pero es limitada y no se puede utilizar en todas las situaciones
+            Las funciones de flecha se introdujeron en ECMA SCRITP 6 (ES6). <br>
+            <br>
+            Esto crea una función func que acepta los parámetros arg1..argN, luego evalúa la expression 
+            del lado derecho mediante su uso y devuelve su resultado.
+          </p>
+          <h5 class="card-title">Desventajas de funciones flecha</h5>
+          <p class="card-text">
+            •	No tiene sus propios enlaces a this o Super y no se debe usar como métodos. <br>
+            •	No tiene argumentos o palabras clave new.target. <br>
+            •	No apta para los métodos call, apply y bind, que generalmente se basan en establecer un ámbito o enlace. <br>
+            •	No se puede utilizar como constructor. <br>
+            •	No se puede utilizar yield dentro de su cuerpo. <br>
+
+          </p>
+          <p class="card-text">
+            Las funciones de flecha nos permiten escribir una sintaxis de función más corta:
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col">
+      <div id="card" class="card text-white bg-secondary mb-3" style="max-width: 100;">
+        <div class="card-header"><h5 class="card-title">Sintaxis básica de función flecha</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">hello =<span class="fun"> () => {</span><br>
+            <span class="fun">return</span><span class="msg">"Hello World!";</span><br>
+            }</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div id="card" class="card text-white bg-secondary mb-3" style="max-width: 100%;">
+        <div class="card-header"><h5 class="card-title">Sin función flecha</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">hello = <span class="fun">function() {</span><br>
+            <span class="fun">return</span><span class="msg"> "Hello World!";</span><br>
+          }</p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+    <div class="card-header"><h5 class="card-title">Ejemplo de función flecha común</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+       <span class="fun"> var multipli=(x,y)=></span>x*y;<br>
+        //Respuesta 9<br>
+        <span class="fun">alert</span><span class="msg">("La multiplicación de 3 x 3 es:" + multipli(3,3));</span>
+      </p>
+      <p class="card-text">
+        Este ejemplo ejecutara una multiplicación 3 x 3.
+      </p>
+    </div>
+    <a id="btn" class="btn btn-primary" href="flecha1.html" target="_blank" role="button">Ir al ejemplo</a>
+
+  </div>
+
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+    <div class="card-header">¿Qué es una función flecha multilínea?</div>
+    <div class="card-body">
+      <h5 class="card-title">Funciones flecha multilínea.</h5>
+      <p class="card-text">
+        Las funciones de flecha anteriores eran muy simples. 
+        Toman los parámetros a la izquierda de =>, los evalúan y devuelven
+         la expresión del lado derecho.
+        A veces se necesita una función más compleja, con múltiples expresiones o sentencias. En ese caso debemos encerrarlos entre llaves. La diferencia principal es que las llaves 
+        necesitan usar un return para devolver un valor (tal como lo hacen las funciones comunes). <br>
+        <br>
+
+    </div>
+  </div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+    <div class="card-header"><h5 class="card-title">Ejemplo de función flecha multilinea</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+       <span class="fun"> let sum = (a, b) =></span>{ <span class="com">  // la llave abre una función multilínea</span><br>
+        <span class="fun">let</span>  result = <span class="msg">parseInt</span>(a) + <span class="msg">parseInt</span>(b) ;<br>
+        <span class="fun"> return</span> result; <span class="com">  // si usamos llaves, entonces necesitamos un "return" explícito</span><br>
+      };<br>
+        a= <span class="fun">prompt</span>("Numero");<br>
+        b=<span class="fun">prompt</span>("Numero");<br>
+      
+      <span class="fun"> alert</span><span class="msg">( sum(a, b) );</span><br>
+    </p>
+      <p class="card-text">
+        Este ejemplo ejecutara una suma entre dos números ingresados por el usuario.
+      </p>
+    </div>
+    <a id="btn" class="btn btn-primary" href="flecha2.html"target="_blank" role="button">Ir al ejemplo</a>
+
+  </div>
+  <br>
+</body>
+</html>

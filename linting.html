@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación DAW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/practicas.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Colegio Don Bosco</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="practicas.html">Buenas practicás</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="linting.html">Linting en JS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/flecha.html">Funciones flecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="spread.html">Operador Spread</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h2>¿Qué es el Linting y para que se utiliza en JavaScript?</h2>
+      <div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+        <img src="img/linting.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+            Linting es conocido un termino para describir a las herramientas que ayudan 
+            a comprobar los distintos errores que para el compilador pueden pasar desapercibidos 
+            como pueden ser el uso de malas prácticas, códigos poco intuitivos y errores de sintaxis. 
+           <br><br>
+           Aunque originalmente linting era una herramienta de programación utilizada para “detectar código 
+           sospechoso, confuso o incompatible entre distintas arquitecturas en programas escritos en C”,
+            ahora es un término comúnmente utilizado para las distintas herramientas que
+            surgieron después de esta que detectaban errores en cualquier lenguaje de programación.
+           <br> 
+            Al momento de estar desarrollando código muchos de estos problemas pueden surgir sin darnos 
+            cuenta y esto puede llevarnos a tener problemas en un futuro y tomar gran parte 
+            de nuestro tiempo tratando de detectar estos errores por nuestra propia cuenta. <br>
+            <br>
+            Las herramientas linting pueden ir desde mostrar o señalar los errores hasta sugerir como corregirlos o hacerlo ellos mismos. <br>
+           <br>
+            En JavaScript existen herramientas linting como ESLint que limpia código JS tanto en el servidor node.js 
+            como en el navegador,
+             JavaScript al ser un lenguaje de tipado débil facilita el 
+             paso de errores como los antes mencionados, por ejemplo, los errores de sintaxis, las malas prácticas 
+             y en el caso de ESLint a como mantener un estilo constante en el código.
+          </p>
+          <img src="img/lint.gif" class="gif" alt="gif">
+<p class="gif">Ese gif mostrado anteriormente es un claro ejemplo de como funciona el Linting a la hora de editar nuestro código.</p>
+        </div>
+      </div>
+      <br>
+</body>
+</html>

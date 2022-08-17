@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación DAW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/practicas.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Colegio Don Bosco</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="practicas.html">Buenas practicás</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="linting.html">Linting en JS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/flecha.html">Funciones flecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="spread.html">Operador Spread</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h2>Operador Spread en JavaScript.</h2>
+      <div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+        <img src="img/spread.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+            También conocido como el operador de propagación este es 
+            compatible con Arrays lo que nos permite: descomponerlos, concatenarlos y 
+            copiarlos con mayor facilidad, También puede ser utilizado en objetos lo que nos
+            permite componer nuevos objetos y crear copias de ellos. <br>
+            <br>
+            La sintaxis extendida o spread syntax permite a un elemento iterable tal como un arreglo 
+            o cadena ser expandido en lugares donde cero o más argumentos (para llamadas de función) 
+            o elementos (para Array literales) son esperados, o a un objeto ser expandido
+             en lugares donde cero o más pares de valores clave (para literales Tipo Objeto) son esperado
+            <br><br>
+            Un dato importante es que podemos concatenar dos Arrays e incluso añadir datos de otro tipo. 
+          </p>
+          <h4>Sintaxis básica de operador spread.</h4>
+          <img src="img/spre.jpg" alt="img" class="img">
+        </div>
+      </div>
+
+      <div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+        <div class="card-header"><h5 class="card-title">Ejemplo de operador spread.</h5></div>
+        <div class="card-body">
+          <p class="card-text">
+
+           <span class="var">const </span> arrays1=<span class="const">[</span><span class="msg">1,2,3</span><span class="const">]</span>;<br>
+           <span class="var">const </span>arrays2= <span class="const">[</span><span class="msg">4,5,6</span><span class="const">]</span>;<br>
+            
+           <span class="var">const </span> arraysResultante= <span class="const">[</span><span class="msg">...arrays1, ...arrays2</span><span class="const">]</span>;<br>
+           <span class="var">const </span> arraysResultante2=<span class="const">[</span><span class="msg">...arrays1, "Separación" ,...arrays2</span><span class="const">]</span>;<br>
+            
+           <span class="const">alert</span>(<span class="msg">arraysResultante</span>);<br>
+           <span class="const">alert</span>(<span class="msg">arraysResultante2</span>);<br>
+           <span class="com">//El resultado sera: 1,2,3,4,5,6</span> <br>
+            <span class="com">//El resultado con la separación sera de: 1,2,3, "Seperación", 4,5,6</span>
+        </p>
+ 
+        </div>
+        <a id="btn" class="btn btn-primary" href="pages/spre.html" target="_blank" role="button">Ir al ejemplo</a>
+    
+      </div>
+      <br>
+</body>
+</html>

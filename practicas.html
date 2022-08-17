@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación DAW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/practicas.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Colegio Don Bosco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practicas.html">Buenas practicás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="linting.html">Linting en JS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/flecha.html">Funciones flecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="spread.html">Operador Spread</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<h2>Buenas prácticas de edición de código en JavaScript</h2>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5> 1- No utilizar JavaScript de forma intrusiva.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+      Una buena práctica es utilizar JavaScript de forma no intrusiva debido a que este queda separado 
+      del documento HTML haciendo que este pueda ser más fácil de editarlo por que como queda separado 
+      del documento 
+      anterior mencionado podamos tener mucho más organizado el código facilitando más las cosas.<br>
+      <br>
+      Entonces, el Javascript no intrusivo, se fundamenta en lo hablado anteriormente, 
+      es decir, en separar la funcionalidad cliente de una página del contenido, ya que 
+      a fin de cuentas un documento HTML, no es otra cosa que un documento que nos permite 
+      difundir información en un medio (si no, preguntádselo a google) 
+      de manera que este, tiene que gozar de una estructura de marcación que nos permita conseguir ese fin..
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+<div class="col">
+<div id="card" class="card text-white bg-secondary mb-3" style="max-width: 95%;">
+  <div class="card-header"><h5 class="card-title">Java Script no intrusivo</h5>
+  </div>
+  <div class="card-body">
+    <p class="card-text">document.getElementById<span class="fun">("btn").onclick= function holaMundo() {</span><br>
+      <span class="fun">alert</span><span class="msg"> ("Hola Mundo!");</span><br>
+    }</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5> 2- Comentar el código de JavaScript.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+      Es muy recomendable ir comentando el código de lo que estamos haciendo para especificar
+       para que funciona tal sintaxis y es bastante útil cuando se trabaja en equipo por que con
+       eso se puede ir especificando a los miembros del equipo cómo funciona y que cambios necesita <br>
+      <br>
+      Puede parecer innecesario al principio, pero, es de gran importancia comentar tu código 
+      lo mejor posible. Es una fase muy importante para recordar nuestro pensamiento a la hora de resolver el problema
+      ademas de que no ayuda a darle mantenimiento en caso de ser un proyecto muy grande, ya que 
+      siempre se cuenta con un equipo de trabajo y es importante saber que hace cada parte del código.
+    </p>
+  </div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5 class="card-title">Ejemplo de comentarios</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+     <span class="fun"> var multipli=(x,y)=></span>x*y;<br>
+     <span class="com"> //Esta función flecha retorna un resultado de la multiplicacion 2 variables</span><br>
+      <span class="fun">alert</span><span class="msg">(multipli(3,3));</span>
+    </p>
+    <p class="card-text">
+     <span class="com"> /*Este es un <br>
+      comentario multilinea*/.</span>
+    </p>
+  </div>
+</div>
+
+<div class="card  text-white bg-dark mb-3"id="card" style="max-width: 80%;">
+  <img src="img/code.jpg" class="card-img-top" alt="...">
+  <div class="card-body" id="card">
+    <div class="card-tittle"><h5> 3- Colocar los scripts en la parte inferior de la pagina.</h5></div>
+      <p class="card-text">
+        La idea de esto es que la pagina se cargue lo más rápido posible para el usuario esto se
+         debe mas que todo por que el navegador debe de cargar todo el contenido antes.<br>
+  </div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5>4- Utilizar comas en lugar de inicializar var en una lista larga</h5> </div>
+  <div class="card-body">
+    <p class="card-text">
+      Si se posee una lista larga de variables hay que omitir la palabra clave var y 
+      utilizar comas en su lugar haciendo que este funcione de
+       igual manera haciendo esto una práctica útil de utilizar.<br>
+      <br>
+     Esta parece una práctica no tan útil pero en realidad es muy importante ya que siempre a la hora
+     de declarar variables, a diferencia de lenguajes como C, C# y C++, no es necesario que declaremos el tipo
+     de dato, por lo cual podemos declarar variables de diferente tipo usando una sola vez la palabra revervada 
+     var. Por ejemplo.
+    </p>
+  </div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5 class="card-title">Ejemplo de declaración de variables.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+     <span class="fun"> var </span>num, nombre, fechaNac, password;<br>
+     <span class="com"> //Con esta declaracion básica de variables ahorramos código, de la otra forma no recomendable quedaria:</span><br>
+    <span class="fun">var </span>num;<br>
+    <span class="fun">var </span>nombre; <br>
+    <span class="fun">var </span>fechaNac; <br>
+    <span class="fun">var </span>password; <br>
+    </p>
+ 
+  </div>
+</div>
+
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5>5-Declara variables fuera de la sentencia For</h5> </div>
+  <div class="card-body">
+    <p class="card-text">
+      Cuando se ejecuta una larga sentencia "for", hay que evitar hacer trabajar al motor más de lo necesario. Por ejemplo:
+<br>
+    </p>
+    <div class="container">
+      <div class="row">
+          <div class="col">
+    <div id="card" class="card text-white bg-secondary mb-3" style="max-width: 100%;">
+      <div class="card-header"><h5 class="card-title">Forma incorrecta</h5>
+      </div>
+      <div class="card-body">
+        <span class="fun">for</span>(<span class="fun">var</span>  i = 0; i < varible.length; i++) {<br>
+         <span class="fun"> var</span> container =<span class="msg">document.getElementById</span> ('container');<br>
+          container.innerHtml += <span class="msg"> 'my number: ' </span>+ i;<br>
+         <span class="msg"> console.log</span>(i);<br>
+       }
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div id="card" class="card text-white bg-secondary mb-3" style="max-width: 100%;">
+      <div class="card-header"><h5 class="card-title">Forma recomendada</h5>
+      </div>
+      <div class="card-body">
+        <span class="fun"> var</span> container =<span class="msg">document.getElementById</span> ('container');<br>
+        <span class="fun">for</span>(<span class="fun">var</span>  i = 0; i < varible.length; i++) {<br>
+           container.innerHtml += <span class="msg"> 'my number: ' </span>+ i;<br>
+          <span class="msg"> console.log</span>(i);<br>
+        }
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5> 6- Usar siempre el punto y coma.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+      Técnicamente, la mayoría de los navegadores permitirán omitir los puntos y comas. <br>
+      Dicho esto, se trata de una práctica muy mala que puede dar lugar a problemas mucho mayores y más difíciles de encontrar.
+
+    </p>
+  </div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5> 7- No abusar del uso de las bibliotecas de JavaScript.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+      Las bibliotecas de JavaScript, como jQuery y Mootools,
+       pueden ahorrarte una enorme cantidad de tiempo a la hora de codificar,
+        especialmente con las operaciones AJAX. Dicho esto, ten siempre presente
+         que una biblioteca nunca puede ser tan rápida como el JavaScript en puro
+        siempre y cuando se escriba correctamente. <br>
+<br>  
+      El método "each" de jQuery es muy bueno para hacer bucles, pero usar una sentencia 
+      "for" nativa siempre será un poco más rápido.
+
+    </p>
+  </div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <div class="card-header"><h5> 8- El uso de comillas.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+      Hay algunas recomendaciones acerca de esta notación. Aunque Javascript permite usar comillas simples o comillas dobles indistintamente, generalmente es recomendable,
+       en ciertos casos, escribir con comillas simples y en otros con comillas dobles.
+      <br><br>  En ciertos casos se desea tener comillas dentro de un texto, y tendrán otras como delimitadores externos del texto.
+    </p>
+  </div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <img src="img/doe2.jpg" class="card-img-top" alt="...">
+  <div class="card-header"><h5> 9- Asingar nombre con sentido a las variables.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+      La intención de asignar un nombre con sentido a carpetas, archivos, variables, funciones, etc. Es indicar cuál es su cometido, de tal manera que quede claro el propósito por el cuál fue creado.
+      Y es que esta tarea se realiza constantemente, y toma su tiempo porque muchas de las veces cuesta mucho saber que nombre se le puede asignar para indicar de forma directa su intención y cometido. Pero también tiene sus beneficios asignar nombres coherentes, puesto que más adelante
+      será menor el esfuerzo cuando se vuelva a leer el código pues facilita su compresión.
+    </p>
+  </div>
+</div>
+<div id="card" class="card text-white bg-dark mb-3" style="max-width: 80%">
+  <img  src="img/ternario.jpg" class="card-img-top" alt="...">
+  <div class="card-header"><h5> 10- Usar el operador ternario.</h5></div>
+  <div class="card-body">
+    <p class="card-text">
+      El operador ternario sirve para escribir el código de una sentencia if de una forma mucho más sencilla. Lo anterior resulta en un código más limpio y fácil de leer. <br>
+
+      Este operador es el único en JavaScript que toma tres operandos: <br>
+
+      - La condición seguida del signo de interrogación ?. <br>
+      - Una expresión a ejecutar si la condición es verdadera seguida de dos puntos : <br>
+      - La expresión a ejecutar si es falsa. <br>
+    </p>
+  </div>
+</div>
+<br>
+
+</body>
+</html>
+
